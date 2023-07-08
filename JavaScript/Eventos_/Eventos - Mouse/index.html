@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    
+    <style>
+        /*estilização dos blocos*/
+        div{
+            width:150px;
+            height:150px;
+            margin:10px;
+            text-align:center;
+            line-height: 150px;
+        }
+      #bloco1{
+        background:gray;
+      }
+      #bloco2{
+        color:white;
+        background:red;
+      }
+
+      #bloco3{
+        color:white;
+        background:blue;
+      }
+      #bloco4{
+        color:white;
+        background:green;
+      }
+      #bloco5{
+        color:black;
+        background:yellow;
+      }
+      #bloco6{
+        color:white;
+        background:orange;
+      }
+    </style>
+        <!--Eventos nos possibilitam capturar ações que são feitas pelos usuários dentro do browser, por exemplo o movimento do mouse sobre um determinado elemento da página-->
+        <!--Eventos do mouse:
+        onclick - acionado quando o elemento é clicado.
+        ondblclick - acionado quando o elemento é clicado 2 vazes.
+        onmouseup - acionado quando o clique sobre o elemento é liberado.
+        onmouseover - acionado quando o cursor do mouse sobrepõe o elemento
+        onmouseout -acionado quando o cursor do mouse sai da região da página ocupada pelo elemento.-->
+    <script>
+        //Comandos do JS
+        
+        function acao1(){
+            alert('O evento de onclick foi acionado')
+        }
+        
+         function acao2(){
+            alert('O evento de ondblclick foi acionado')
+         }
+        
+         function acao3(){
+            alert('O evento de onmouseup foi acionado')
+         }
+
+         function acao4(){
+            alert('O evento de onmouseover foi acionado')
+         }
+
+         function acao5(){
+            alert('O evento de onmouseout foi acionado')
+         }
+
+         function acao6(){
+            alert('O elemento foi clicado')
+         }
+
+         function acao7(){
+            alert('O cursor do mouse deixou a região do elemento')
+         }
+    </script>
+</head>
+<body>
+  <!--Para usar os eventos precisamos colocar a propriedade dentro do elemento, segue o exemplo:-->
+  <div id="bloco1" onclick="acao1()">onclick</div>
+
+  <div id="bloco2" ondblclick="acao2()">ondblclick</div>
+
+  <div id="bloco3" onmouseup="acao3()">ondmouseup</div>
+
+  <div id="bloco4" onmouseover="acao4()">onmouseover</div>
+
+  <div id="bloco5" onmouseout="acao5()">onmouseout</div>
+
+  <!--Podemos também mesclar ações dentro de 1 só bloco, veja o exemplo:-->
+
+  <div id="bloco6" onclick="acao6()" onmouseout="acao7()">Mesclando ações</div>
+</body>
+</html>

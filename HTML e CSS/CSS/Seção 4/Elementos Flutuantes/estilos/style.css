@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+    /*
+    O float é um atributo para posicionamento
+    que pode ser usado 3 valores:
+        left-> Será posicionado a esquerda.
+        right-> Será posicionado a direita.
+        none-> Mantém o posicionamento padrão.
+    */
+        
+.conteudo{
+            background: blue;
+            border: 2px solid black;
+            width: 200px;
+            height:200px;
+           float:left;
+           margin:10px;
+        }
+         /*Perceba que o conteúdo 3 quebrou, pois não tem espaço na página*/
+
+        #limpar{
+            clear:left;
+        }
+        /*Perceba que o texto colocado rodeou os blocos para que isso não aconteça precisamos limpar esses conteúdos flutuantes com o atributo clear.*/
+
+        /*O atributo clear sempre deve ser usado para o mesmo lado que o float está alinhado, ou seja, se o float  está alinhado a esquerda o clear também deve estar*/
+
+        /*Os valores do clear são: 
+        left -> limpar a esquerda
+        rigth -> limpar a direita
+        booth -> limpar ambos 
+        none ->  não limpar
+        */
+
+    /*Perceba que a div fundo não apareçe pois o fluxo das flutuantes a sobrepõe para isso é só usar o clear*/
+      
+         #fundo{
+            border:10px solid red;
+            background-color:green;
+            clear:both;
+            width: 500px;
+            height: 500px;
+         }

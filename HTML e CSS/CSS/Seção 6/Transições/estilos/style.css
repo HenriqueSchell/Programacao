@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#caixa{
+    width:300px;
+    height:300px;
+    background-color:orange;
+}
+
+#caixa:hover{
+    width:400px;
+    background-color:yellow;
+   transition:width 3s, background-color 3s;
+}
+/*As transições são muito interessates, para usar basta usar o atributo transition, após isso voc~e deve colocar o seletor e o tempo da transição, assim como no exemplo acima*/
+/*Você ainda pode usar o valor all e o tempo para que a transição atinja todos os elementos.*/

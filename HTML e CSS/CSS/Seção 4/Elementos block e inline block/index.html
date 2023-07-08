@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos block, inline e inline block</title>
+    <style>
+        .borda{
+            border:1px solid red;
+            display:inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elementos block</h1>
+    <p>Os elementos block como titúlos, parágrafos eu tabelas, tem a largura de toda a tela. Outro comportamento do block é que ele sempre vai ficar um abaixo do outro.</p>
+    <!--O atributo usado é display:block;-->
+    <h1>Elementos inline</h1>
+    <p>Os elementos inline como links, spans e imagens são diferentes, sua largura depende de seu conteúdo e eles ficam sempre um a frente do outro(lado).</p>
+    <!--O atributo usado é display:inline;-->
+    <h1>Elementos inline-block</h1>
+    <p>Os elementos inline-block tem a largura definida por seu conteúdo, ficam um ao lado do outro e ele passa para baixo quando a linha é quebrada.</p>
+    <!--O atributo usado é display:inline-block;-->
+  <hr>
+  <h1>Testes:</h1>
+
+  <h1 class="borda">Bloco 1</h1>
+  <h1 class="borda">Bloco 2</h1>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento absoluto</title>
+    <style>
+       body{
+        background:#007fc7;
+       }
+       #container{
+        background:white;
+       }
+       p{
+            width:300px;
+        }
+        .absolute{
+            border:1px solid red;
+            position:absolute;
+            
+        }
+        /*Podemos ver que nesse exemplo a posição absoluta sai do fluxo padrão pois está em cima de outro parágrafo.*/
+        /*Para o alinhar use as propriedades de deslocamento: top, right, bottom e left.*/
+       .absolute-posicionamento{
+        border:1px solid  red;
+        position:absolute;
+        top:500px;
+        right:40px;
+       }
+      /*Lembrando sempre que o posicionamento absoluto é sempre alinhado ao container que tem uma posição definida e não a padrão static, para isso vamos a um exemplo: para que o posicionamento absoluto seja alinhado conforme a div que ele está dentro essa div precisa ter um posicionamento estático, relativo ou fixo.*/
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamento Absoluto</h1>
+        <p>P1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, pariatur consequuntur. Voluptatibus rem molestias maiores unde voluptatum nulla? Excepturi, repellendus. Facere expedita harum delectus praesentium commodi soluta cumque placeat vero.</p>
+        <p class="absolute">P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fuga quo iure earum, veritatis placeat cupiditate, magni iste quia, a cum! Non voluptas magni sint qui obcaecati ipsum? Eaque, numquam!</p>
+        <p>P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorem voluptate at, incidunt maiores cupiditate obcaecati vitae cum similique possimus ratione sit distinctio aspernatur illo exercitationem amet! Quos, esse rem?</p>
+    </div>
+    <div id="container">
+        <h1>Posicionamento Absoluto</h1>
+        <p>P1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, pariatur consequuntur. Voluptatibus rem molestias maiores unde voluptatum nulla? Excepturi, repellendus. Facere expedita harum delectus praesentium commodi soluta cumque placeat vero.</p>
+        <p class="absolute-posicionamento">P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fuga quo iure earum, veritatis placeat cupiditate, magni iste quia, a cum! Non voluptas magni sint qui obcaecati ipsum? Eaque, numquam!</p>
+        <p>P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorem voluptate at, incidunt maiores cupiditate obcaecati vitae cum similique possimus ratione sit distinctio aspernatur illo exercitationem amet! Quos, esse rem?</p>
+    </div>
+</body>
+</html>

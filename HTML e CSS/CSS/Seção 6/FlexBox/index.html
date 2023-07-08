@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox em container</title>
+    <style>
+     /*O flexbox funciona como um display então para usa-lo precisa ter um container e os flex itens dentro, ele é usado no container como display:flex;*/
+
+     /*O flex-direction possibilita a movimentação com os valores:
+      row-> em linha
+      row-reverse-> em linha reverso
+      column-> em coluna
+      column-reverse-> em coluna reverso     
+     */
+
+     /*O flex-wrap manipula a quebra de itens usando os valores:
+     wrap-> para quebrar
+     nowrap-> Não quebrar
+     wrap-reverse-> para quebrar e ficar ao contrário
+     */
+
+     /*O justify-content manipula o alinhamento horizontal usando os valores:
+     
+     flex-start-> alinha os elementos a partir do canto superior esquerdo, colando o primeiro no canto esquerdo e distribuindo os demais em seguida.
+
+     flex-end-> alinha os elementos a partir do canto superior direito, colando o primeiro no canto direito e distribuindo os demais em seguida.
+
+     center-> centraliza os elementos.
+
+     space-between-> cola o primeiro e o ultimo elemento nas extremidades distribuindo o restante.
+
+     space-around-> deixa um espaçamento nas extremidades.
+     */
+
+     /*O align-items faz o alinhamento dos intens usando os valores:
+     
+     stretch-> usado quando não há altura definida ele usa toda a altura do container.
+
+     center-> centraliza os itens no meio da página.
+
+     flex-start-> alinha os itens na parte superior da tela.
+
+     flex-end-> alinha os itens na parte inferior da tela.
+
+     baseline-> alinha os itens conforme uma linha superior que há neles.
+     */
+      #conteudo{
+        background:#dcdcdc;
+        width: 100vw;
+        height:600px;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+         
+      .item{
+        width:100px;
+        height:100px;
+        background:white;
+        border:1px solid red;
+        margin:10px;
+          }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </div>
+
+</body>
+</html>

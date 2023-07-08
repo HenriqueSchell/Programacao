@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores e Imagem de fundo</title>
+    <style>
+       /*Para por uma cor de fundo use o background-color*/
+
+       /*Para por use o background-image:url();*/
+
+       /*O background-repeat:; controla a repetição da imagem de fundo, ele tem 4 valorem, são eles:
+       1.repeat-> repete a imagem na horizontal e vertical
+       2.no-repeat-> não repete a imagem
+       3.repeat-x -> repete na horizontal
+       4.repeat-y -> repete na verical*/
+
+       /*O background-attachment:; controla se a imagem fica fixa mesmo com a barra de rolagem, para isso temos 2 valores:
+       1.fixed->fica fixa mesmo rolando para baixo.
+       2.scroll-> respeita a barra de rolagem,ou seja, se a barra rola para baixo ela fica onde está*/
+
+       /*O background-position:; controla a posição da imagem, para isso esse atributo aceito 1 ou 2 valores só que são muitos como center right, ou seja, centro e direita, tem uma imagem na página com os valores.*/
+
+       /*O background:; é a shorthand sua ordem é: 
+       backgoround-color
+       background-image
+       background-repeat
+       background-attachment
+       background-position*/
+       /*Um exemplo é 
+       background:red url('imagens.png') no-repeat fixed center; */
+
+       body{
+            background-image:url(imagens/yoshi.png);
+            background-repeat:no-repeat;
+            background-attachment: scroll;
+            background-position: center top;
+        }
+          div{
+            margin-top:400px;
+          }
+          /*isso será explicado mais para frente*/
+    </style>
+</head>
+<body>
+  <div>
+    <img src="imagens/wallpaper003.jpg" alt="" width="500" height="400">
+  </div>
+</body>
+</html>

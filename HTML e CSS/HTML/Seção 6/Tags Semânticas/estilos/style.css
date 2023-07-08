@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+header{
+    border: 1px solid red;
+    background:#f2f2f2;
+    padding:10px;
+}
+
+nav{
+    border:1px solid green;
+    background:#f2f2f2;
+    padding:10px;
+}
+
+footer{
+    background:#b0aeae;
+    margin-top:20px;
+}
+
+article{
+    background:orange;
+    padding:15px;
+}
+
+section{
+    border: 2px dotted white;
+  
+}
+
+aside{
+    background:blue;
+}

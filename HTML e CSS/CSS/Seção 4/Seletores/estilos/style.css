@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*O seletor geral customiza todos os elementos da página, perceba que todos estão com borda e com a fonte arial, que é oque foi definido*/
+*{
+    border: 1px solid red;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*Um seletor de texto customiza apenas textos como h1,h2,h3 e etc. Perceba que todos os textos estão verde*/
+
+h1{
+    color:green;
+}
+h2{
+    color:green;
+}
+
+/*Os seletores de classes são usados quando é definido uma classe a um local que é desejado customizar, no exemplo temos uma classe .azul que customiza tudo, e uma classe p.azul que customiza apenas os parágrafos*/
+.azul {
+    color: blue
+}
+
+p.azul {
+    color: blue;
+}
+
+/*Os seletores de id são seletores práticamente iguais as classes, porém os ids não podem ser repetidos, caso for preciso repetir use uma classe.*/
+#ola-mundo{
+ color:blueviolet;
+ font-size:30px;
+}
+
+/*Um seletor de filho seleciona um elemento que é um filho direto de outro por exemplo ul > li, o li está dentro da ul, ou seja,  ele é um filho direto.*/
+ul > li{
+    font-size:18px;
+    color:purple;
+}
+
+/*Seletores de descendentes selecionam elementos que estão dentro deles mas não são filhos diretos por exemplo uma li que esteja dentro de um span entre eles tem a ul mas isso não interfere,pois ele é descendente do span.*/
+span li{
+ color:grey;
+}
+
+/*Seletores de irmãos adjacentes selecionam a propriedade que você definiu e o irmão mais proximo do outro por exemplo: você selecionou o h1 e o parágrafo o h1 vai ser estilizado e o parágrafo posterior e mais proximo também, veja abaixo:*/
+
+h1+p{
+    color:blue
+}
+/*Veja que o segundo parágrafo não foi estilizado.*/
+
+/*Os seletores de irmãos gerais são iguais aos seletores de irmãos adjacentes, porém com a diferença que ao inves de ser o irmão mais próximo selecionado ele seleciona todos os irmaõs defenidos veja:*/
+
+h2~p{
+    color:dodgerblue
+}
+/*Perceba que os dois foram estilizados*/

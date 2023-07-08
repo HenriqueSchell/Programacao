@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de textos</title>
+    <style>
+      body{
+        font-size:40px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      
+      /*Para dar peso em nosso texto usamos o font-weight, podemos usar como valor o ligther, normal, bold e bolder. Ou tambem podemos usar valores de 100 a 900 como 100 mais fraco e 900 mais forte */
+      .negrito{
+        font-weight: lighter;
+      }
+      .peso{
+        font-weight:900;
+      }
+      /*Para usar itálico use o font-style*/
+      #italico{
+        font-style:italic;
+      }
+      /*O text-decoration serve para decorar seu texto*/
+      .underline{
+        text-decoration:underline;/*Forma uma linha inferior*/
+      }
+      .overline{
+        text-decoration:overline;/*Forma uma linha superior*/
+      }
+      .line-through{
+        text-decoration:line-through;/*Forma uma linha no meio do texto*/
+      }
+      /*Para deixar sem nenhuma decoração use o valor none no text-decoration*/
+      .none{
+        text-decoration:none;
+      }
+      
+
+      /*Podemos usar uma shorthand que é uma forma de reduzir o código, a shorthand font tem 3 valores para ser usados em ordem a ordem é:
+       1.formatação por exemplo bold ou valor de peso.
+       2.Tamanho da fonte.
+       3.familia de font.
+      */
+     .font{
+       font: bolder 1.2em Arial;
+      }
+      
+    </style>
+</head>
+<body>
+    <p class="negrito">Texto leve</p>
+    <p class="peso">Texto negrito</p>
+    <p id="italico">texto itálico</p>
+    <p class="underline">Formatação de texto underline</p>
+    <p class="overline">Formatação de texto overline</p>
+    <p class="line-through">Formatação de texto line-through</p>
+    <p class="none">Texto sem decoração</p>
+    <p class="font">Shorthand font</p>
+</body>
+</html>

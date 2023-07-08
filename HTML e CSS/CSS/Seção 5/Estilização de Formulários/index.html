@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando Formulários</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <h1>Estilizando Formulários</h1>
+    <form>
+        <fieldset><!--Usado para agrupar grupos-->
+         <legend><!--Legenda para o grupo-->
+           Detalhes de Contato
+         </legend>
+         <div>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+         </div>
+         <div>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail">
+         </div>
+         <div>
+            <label for="iurl">URL:</label>
+            <input type="url" name="url" id="iurl">
+         </div>
+        </fieldset>
+        <fieldset>
+            <legend>Comentários</legend>
+            <div>
+                <label for="imensagem">Mensagem:</label>
+                <textarea name="mensagem" id="imensagem"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Lembrar de mim</legend>
+            <div>
+                <label for="sim">
+                    <input type="radio" name="lembrar" id="sim">Sim
+                </label>
+            </div>
+
+            <div>
+                <label for="nao">
+                    <input type="radio" name="lembrar" id="nao">Não
+                </label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento absoluto</title>
+    <style>
+       body{
+        background:#007fc7;
+       }
+       #container{
+        background:white;
+        padding:10px;
+       }
+       p{
+            width:300px;
+        }
+       .fixed{
+        border:2px solid red;
+        background:#f2f2f2;
+        position:fixed;
+        top:0px;
+        right:0px;
+        margin:0px;
+       }
+       /*O posicionamento fixo fica sem fixo em relação a janela,ou seja, ele não sai da tela fica sempre fixo na tela.*/
+    </style>
+       <!--O próprio documento tem uma margem e um espaçamento, para retirar a margem e o espaçamento padrão use dentro do id ou da classe que você quer que não tenha os espaçamentos a margin:0px; e o padding:0px;-->
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamento Absoluto</h1>
+        <p>P1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, pariatur consequuntur. Voluptatibus rem molestias maiores unde voluptatum nulla? Excepturi, repellendus. Facere expedita harum delectus praesentium commodi soluta cumque placeat vero.</p>
+        <p class="fixed">P2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fuga quo iure earum, veritatis placeat cupiditate, magni iste quia, a cum! Non voluptas magni sint qui obcaecati ipsum? Eaque, numquam!</p>
+        <p>P3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolorem voluptate at, incidunt maiores cupiditate obcaecati vitae cum similique possimus ratione sit distinctio aspernatur illo exercitationem amet! Quos, esse rem?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi magnam consequuntur nostrum fugit quae tempora quo sunt modi maiores incidunt. Porro officiis repudiandae quam eveniet fuga officia temporibus ad ipsum.
+        Qui ducimus sunt quia, cum nisi, unde excepturi nobis debitis odio perferendis alias. Possimus maiores optio eaque hic? Omnis harum eius id neque est dolore iusto. Animi sint nostrum eius!
+        Nam illum voluptatibus non ut eum quae rerum similique laborum quas et atque repudiandae, expedita blanditiis animi provident, voluptate eveniet delectus numquam dolore voluptatum necessitatibus est itaque qui. Laudantium, consectetur.
+        Corrupti amet eaque beatae cumque ipsum numquam dolorem voluptatem suscipit mollitia quisquam? Nemo aliquid vel soluta doloremque provident deleniti dolorem ut, odit quasi maiores error, impedit aliquam numquam? Expedita, perferendis.
+        Ea, minus fugit eius natus omnis officiis! Dolores facere adipisci natus delectus expedita vel animi numquam veritatis maxime, officiis nobis commodi, enim, ut accusamus hic sint amet modi inventore pariatur.</p>
+    </div>
+
+</body>
+</html>

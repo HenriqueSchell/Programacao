@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*Especificidade*/
+
+p{
+    color:red !important;
+}
+p{
+    color:blue;
+}
+/*Quando há 2 seletores iguais o último sempre é aplicado*/
+/*para burlar isso pode usar o !important ele automaticamente faz com que aquele seletor seja o mais importante.*/
+
+/*Quando um seletor for mais específico que outro ele automaticamente é aplicado por exemplo um seletor geral ultiliza a cor vermelha e tudo fica vermelho, porém se você colocar um seletor h1 a estilização do h1 será aplicada pois é mais específica.*/
+
+/*se colocarmos uma classe nesse h1 o seletor h1 passará a ser menos específico*/
+
+*{
+    color:red;
+}
+h1{
+    color: green;
+}
+h1.azul{
+    color:blue;
+}
+h1#amarelo{
+  color:yellow;
+}
+
+/*A ordem de especificidade é:
+1. Seletor h1#id
+2. seletor h1.classe
+3. Seletor h1
+4. Seletor geral
+*/

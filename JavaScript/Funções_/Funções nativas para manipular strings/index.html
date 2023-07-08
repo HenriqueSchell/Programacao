@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Nativas</title>
+    <script>
+
+      //propriedade length - retorna a quantindade de carácteres de uma string.
+      //A contagem de carácteres começa em 0 e conta da espaço como 1 carácter
+      document.write('Henrique Schell'.length)
+      document.write('<hr>')
+
+      //A função charAt() recupera a string de uma determinada posição, dentro do parêntese da função informe o número da posição.
+      document.write('Henrique Schell'.charAt(5))
+      document.write('<hr>')
+
+      //A função indexOf() consiste em informar a posição do caracter na sua primeira ocorrencia, por exemplo você informa o carácter q e ele informa que está na posição 5.
+      var nome = ' Henrique Schell '
+      document.write(nome.indexOf('q'))
+      document.write('<hr>')
+
+      //A função replace() permite substituir textos dentro de uma string, O JS vai procucar no caso abaixo a cadeia de carácteres Schell e se achar ele irá substituir por dutra que foi o parâmetro designado
+      document.write(nome.replace('Schell', 'Dutra'))
+      document.write('<hr>')
+       
+      //A função substr() recorta determinada string conforme informado a posição inicial, após isso você tende informar quantos carácters queres recuperar.
+      document.write(nome.substr(9, 6))
+      document.write('<hr>')
+
+      /*Temos duas funções semelhantes para deixar o texto em caixa alta e caixa baixa:
+      toLowerCase() - caixa baixa
+      toUpperCase() - caixa alta
+      */
+      document.write(nome.toLowerCase())
+      document.write('<br>')
+      document.write(nome.toUpperCase())
+      document.write('<hr>')
+
+      //Temos a função trim() que tem como objetivo remover os espaços em branco das extremidades das strings.
+      document.write('-' + nome.trim() + '-')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Formulário</title>
+    <style>
+        body{
+            line-height: 55px;
+        }
+    </style>
+    <!--Partimos agora para os eventos de formulário, na documentação da w3schools tem todos os parâmetros https://www.w3schools.com/js/js_events.asp -->
+    
+    <!--Vamos trabalhar aqui com 3 parâmetros:
+    onfocus - ele é acionado quando o elemento recebe o foco do cursor do mouse.
+    onblur -  ele é acionado quando o elemento perde o foco do curso do mouse
+    onchange - ele é acionado quando o estado do elemento é modificado.
+    -->
+    <script>
+
+    </script>
+</head>
+<body>
+    <div>
+        <label for="texto">digite o texto (onfocus)</label>
+        <input onfocus="console.log('recebeu o foco')" type="text" name="texto" id="texto">
+    </div>
+
+    <div>
+        <label for="txt">digite o texto (onblur)</label>
+        <input onblur="console.log('perdeu o foco')" type="text" name="txt" id="txt">
+    </div>
+
+    <select onchange="console.log('Estado foi mudado')">
+        
+        <option>Selecione</option>
+        <option value="1">Primeira Opção</option>
+        <option value="2">Segunda Opção</option>
+
+    </select>
+</body>
+</html>

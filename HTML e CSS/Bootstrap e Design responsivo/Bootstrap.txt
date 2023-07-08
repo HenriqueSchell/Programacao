@@ -1,0 +1,1 @@
+O Bootstrap é um framework que permite fazer alterações em elemntos mais facilmente, e também ultilizado para fazer design responsivo, ou seja, permite diferentes exibições de uma página em vários dispositivos diferentes.

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset{
+    padding:1em;
+    margin: 1em 0; /*O primeiro valor controla superior e inferior e o segundo laterais*/
+    border:1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend{
+    font-weight: bold;
+}
+
+label{
+    display:block;
+    cursor:pointer;/*Muda o cursor para clique quando passar por cima*/
+}
+/*Esse é um atributo que define que no exemplo só os inputs do tipo text serão formatados.*/
+input [type="text"]{
+    width: 20em;
+}
+
+textarea{
+    width:20em;
+    height:10em;
+}

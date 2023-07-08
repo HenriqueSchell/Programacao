@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+
+      #caixa{
+        width:300px;
+        height:300px;
+        padding:8px;
+        margin:20px;
+        background:#009670;
+        box-shadow: -5px 5px 5px 5px black;
+        /*O box-shadow define a sobra em caixas. Os valores negativos movimentam as sombras para o lado contrário. Os valores estão a baixo */
+       
+        /*O primeiro é a movimentação horizontal, o segundo é a movimentação vertical e o terceiro é o blur da sombra o quarto é o espalhamento e o quinto é a cor da sombra.*/
+      }
+
+      #caixa h1{
+        color:white;
+        text-shadow:5px 5px 5px black;
+      }/*O text-shadow serve para definir sombras em textos, para isso tem 4 valores. O primeiro é a movimentação horizontal, o segundo é a movimentação vertical e o terceiro é o blur da sombra e o quarto é a cor da sombra.*/
+
+    </style>
+</head>
+<body>
+
+    <div id="caixa">
+        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi tenetur magni fugiat, enim mollitia sequi sint quas aperiam ipsum hic. Voluptatibus laboriosam, sapiente veritatis quos ea officia soluta eveniet pariatur.
+        Facere voluptas qui velit harum magni, vero ipsum animi mollitia quaerat perspiciatis? </p>
+    </div>
+
+</body>
+</html>

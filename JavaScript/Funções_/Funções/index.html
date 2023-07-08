@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <script>
+         //tipos de funções
+         /*
+         void - não terá retorno para o usuario que chama a função
+         retorno - retornam um parâmetro ao usuário
+         */
+          
+         //é importante que o nome dado a função remeta ao objetivo dela para assim o código ficar mais legivel.
+         // é recomendado que a função tenha a primeira palavra um verbo no infinitivo e a segunda remeta ao objetivo começando com letra maiúscula
+         
+        function calcularAreaTerreno ( largura, comprimento) {
+            //lógica
+            var area = largura * comprimento
+            //document.write('o terreno possui ' + area + ' metros quadrados')
+            return area
+        }
+            var largura = prompt('Informe a largura do terreno:')
+            var comprimento = prompt('Informe o comprimento do terreno:')
+            parseFloat(largura)
+            parseFloat(comprimento)
+            document.write('o terreno possui ' + calcularAreaTerreno(largura, comprimento) + ' metros quadrados')
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

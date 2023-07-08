@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        #caixa{
+            width:300px;
+            height:300px;
+            background-color:red;
+            color:white;
+            padding:50px;
+        }
+        #caixa2{
+            width:300px;
+            height:300px;
+            background-color:lightgrey;
+            color:white;
+            padding:50px;
+            -webkit-box-sizing: border-box;/*Prefixo para versões antiga do chrome*/
+            -moz-box-sizing: border-box; /*Prefixo para versões antiga do mozzila*/
+            box-sizing: border-box;
+        }
+        /*Perceba que as duas caixas tem a mesma medida porém a primeira é maior pois quando um padding é aplicado ele soma ao tamanho total da caixa, ou seja, a caixa 1 tem 400px pois somou com o padding de todos os lados. A segunda caixa tem também 300px mas não está do mesmo tamanho mesmo contendo o mesmo padding, pois a propriedade border-sizing:border-box;  não soma o padding ao tamanho total. */
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <h1>Caixa</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ad sed fugit labore id vel ipsa expedita quo! Sed quos eos vel. Dolore quasi magni praesentium vel quaerat, temporibus enim.</p>
+    </div>
+    <div id="caixa2">
+        <h1>Caixa2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ad sed fugit labore id vel ipsa expedita quo! Sed quos eos vel. Dolore quasi magni praesentium vel quaerat, temporibus enim.</p>
+    </div>
+</body>
+</html>

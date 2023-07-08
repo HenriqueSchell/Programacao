@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novas Tags de Input</title>
+    <style>
+       #texto{
+        margin:20px 0px;
+       }
+
+       #email{
+        margin:20px 0px;
+       }
+
+       #numero{
+        margin:20px 0px;
+       }
+
+       #url{
+        margin:20px 0px;
+       }
+
+       #pesquisa{
+        margin:20px 0px;
+       }
+       
+       #range{
+        margin:20px 0px;
+       }
+     
+
+       #data{
+        margin:20px 0px;
+       }
+    </style>
+</head>
+<body>
+     <!--Tags input HTML5-->
+<form>
+        <!--A tag text forma uma caixa de texto-->
+    <div id="texto">
+        <label for="text">Nome:</label>
+        <input type="text" name="text" id="text" required autofocus><!--A tag autofocus faz com que quando entrado na página o foco seja a caixa escolhida-->
+    </div>
+    
+     <!--O atributo required faz com que o campo se torne obrigatório ser preenchido-->
+    <div id="email">
+         <label for="email">E-mail:</label>
+         <input type="email" name="email" id="email" required>
+    </div>
+
+    <!--A tag number forma uma caixa apenas de números-->
+    <div id="numero">
+        <label for="numero">Número:</label>
+        <input type="number" name="numero" id="numero" required min="5" max="10" step="5">
+        <!--O atributo min e max define o numero máximo e o número mínimo da caixa-->
+        <!--O atributo step serve para definir nas setas de quanto em quanto ele vai pular ex:5 ele vai pular de 5 em 5. -->
+    </div>
+    
+    <!--A tag URL forma uma caixa apenas de urls-->
+    <div id="url">
+     <label for="url">URL:</label>
+     <input type="url" name="url" id="url" placeholder="Digite seu URL">
+     <!--O atributo placeholder serve para escrever dentro da caixa, muito usado para indicar oque tem que escrever dentro da caixa-->
+    </div>
+ 
+    <!--A tag search forma uma caixa de pesquisa-->
+    <div id="pesquisa">
+      <label for="pesquisa">Pesquise:</label>
+      <input type="search" name="pesquisa" id="pesquisa">
+    </div>
+      
+    <!--A tag range faz uma barra de arrastar-->
+    <div id="range">
+        <label for="range">Range:</label>
+      <input type="range" name="range" id="range" min="1" max="1000">
+    </div>
+
+     <!--A tag date forma uma caixa para informar dia, mês e ano-->
+    <div>
+        <label for="data">Data:</label>
+        <input type="date" name="data" id="data">
+    </div>     
+ 
+      <!--A tag color forma uma caixa para escolher cores-->
+     <div id="cor">
+        <label for="cor">Cor:</label>
+        <input type="color" name="cor" id="cor">
+     </div>
+
+    <div id="enviar">
+        <input type="submit" value="Enviar">
+    </div>
+</form>
+
+</body>
+</html>

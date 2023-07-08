@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Nativas para tarefas matemáticas</title>
+    <script>
+        /*Para efetuar operações com funções matemáticas usamos o objeto Math.parâmetro*/
+        //Arredondamento para cima usamos o Math.ceil(valor), independente da fração sempre será arredondo para cima.
+       var x = Math.ceil(10.380)
+       document.write(x)
+
+       document.write('<hr>')
+        //Arredondamento para baixo usamos o Math.floor(valor), independente da fração sempre será arredondo para baixo.
+       var y = Math.floor(10.380)
+       document.write(y)
+
+       document.write('<hr>')
+
+
+        //Arredondamento dinâmico considerando a fração ele arredonda conforme a fração, para isso usamos o método Math.round(valor).
+       var z = Math.round(10.380)
+       var a = Math.round(10.560)
+       document.write(y)
+       document.write('<br>')
+       document.write(a)
+
+       document.write('<hr>')
+
+       //o método random fornece um número aleatório entre 0 e 1.
+       var b = Math.random()
+       document.write(b)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

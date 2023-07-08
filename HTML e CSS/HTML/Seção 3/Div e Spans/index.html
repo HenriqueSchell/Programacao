@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div e spans</title>
+    <style>
+        #topo{
+            background:blue;
+            color:white;
+        }
+        #conteudo{
+            background:lightgreen;
+        }
+        #rodape{
+            background: grey;
+            color: white;
+        }
+        .div{
+            background:pink;
+        }
+        .span{
+            background:purple;
+        }
+    </style>
+</head>
+<body>
+    <!--Uma div serve para fazer divisões no seu site como cabeçalhos, menus, artigos e etc.-->
+    <div id="topo">
+        <img src="imagens/amazon.png" alt="" width="200">
+        <ul>
+            <li>Home</li>
+            <li>Produtos</li>
+            <li>Contatos</li>
+        </ul>
+    </div>
+    <div id="conteudo">
+        <div>
+            <p>produto 1</p>
+        </div>
+        <div><p>produto 2</p></div>
+        <div><p>produto 3</p></div>
+
+    </div>
+    <div id="rodape">
+        <p>Todos os direitos reservados</p>
+    </div>
+    <!--Os spans tem basicamente a mesma função de uma div, porém os spans colocam suas linhas lado a lado enquanto as divs uma embaixo da outra. Veja o exemplo:-->
+    <div class="div">
+       Henrique
+    </div>
+    <div class="div">
+        Schell
+    </div>
+    <span class="span">
+         Henrique
+    </span>
+    <span class="span">
+        Schell
+    </span>
+   
+    <!--As divs são elementos do tipo block, elementos do tipo block ficam sempre um abaixo do outro-->
+    
+    <!--Os spans são elementos do tipo inline, elementos do tipo inline ficam sempre um ao lado do outro-->
+    
+</body>
+</html>

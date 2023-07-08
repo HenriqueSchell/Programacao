@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width:600px;
+    border-collapse:separate; /*Usado para juntar as linhas ou separar, usando os valores collapse para juntar e separate para separar*/
+}
+
+th,td{
+    padding:7px;
+}
+
+th{
+    text-transform:uppercase;/*Usado para deixar todas as letras maiúsculas*/
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align:left;
+    font-size:90%; /*A fonte ficou 90% do seu tamanho orginal que pode ser definido ou o padrão 16px*/
+    letter-spacing: 0.1em;/*Muda o espaçamento entre as letras*/
+}
+
+tr.alternado{
+    background-color: #efefef;
+}
+
+tr:hover{
+    background-color:#c3e6e5;
+}
+
+.numero{
+    text-align:right;
+}

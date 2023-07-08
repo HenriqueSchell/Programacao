@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/*Muito importante usar a regra charset utf-8, pois ela que faz a compatibilidade com os acentos e carácteres especiais.*/
+
+h1{
+    color:red;
+}

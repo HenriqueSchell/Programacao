@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma e substração com funções</title>
+    <script>
+
+    alert('Bem vindo ao nosso site! Nosso site faz operações de soma e subtração.')
+
+    var num1 = prompt('Informe o primeiro número:')
+    var operacao = prompt('Informe se a operação sera de soma ou subtração:')
+    var num2 = prompt('Informe o segundo número:')
+
+    num1 = parseFloat(num1)
+    num2 = parseFloat(num2)
+
+    function calcularOperacao(num1, operacao, num2){
+
+        var valor
+        if(operacao == 'soma'){
+            valor = num1 + num2
+        }
+        if(operacao == 'subtracao'){
+            valor = num1 - num2
+        }
+        return valor
+    }
+      
+    
+      document.write('O resultado é: ' + calcularOperacao(num1, operacao, num2))
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+    
+</body>
+</html>
+
+
+

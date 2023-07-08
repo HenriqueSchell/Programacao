@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.conteudo{
+    border:1px solid red;
+    /*padding é o espaçamento interno*/
+    /*padding-top:10px;
+    padding-right:20px;
+    padding-bottom:20px;
+    padding-left:20px;*/
+    
+    /*Podemos usar a shorthand padding:; para compactar tudo isso ou configurar cada uma ultilizando a ordem acima*/
+    
+    /*margin é o espaçamento externo*/
+    padding:20px;
+    margin-top:20px;
+    width:150px;
+}
+
+/*A margin pode ser usada como shorthand, com a seguinte ordem:
+top
+rigth
+left
+bottom*/
+
+.noticias{
+    border: 2px solid black;
+    padding:10px;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+/*Da para perceber que o espaçamento superior está maior, pois títulos com h1,h2,h3... tem espaçamentos próprios. aqui abaixo você verá a resolução disso.*/
+
+.resolucao{
+    border: 2px solid black;
+}
+.resolucao > h1{
+   
+    padding:0px;
+}
+/*Para resolver o problema você apenas tenque tirar o padding do titulo.*/

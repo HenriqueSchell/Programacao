@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Parallax</title>
+    <style>
+      
+      body,html{
+        margin:0px;
+        font: 16px "Lato", sans-serif;
+        color:#777;
+        height:100%;
+      }
+
+      .conteudo{
+        color:#777;
+        background-color: #fff;
+        text-align: justify;
+        padding:50px 80px;
+      }
+
+      h1{
+        text-transform:uppercase;
+        text-align:center;
+      }
+      /*Efeito Parallax*/
+      .imagem1,.imagem2,.imagem3,.imagem4{
+        height:100%;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position:center;
+        background-attachment: fixed;/*Essa propriedade da o efeito parallax*/
+        position:relative;
+      }
+      
+      
+      .imagem1{
+        background-image:url(imagens/imagem1.jpg);
+      }
+      .imagem2{
+        background-image:url(imagens/imagem2.jpg);
+      }
+      .imagem3{
+        background-image:url(imagens/imagem3.jpg);
+      }
+      .imagem4{
+        background-image:url(imagens/imagem4.jpg);
+      }
+
+       .conteudo-titulo{
+        position:absolute;
+        left:0;
+        top:45%;
+        width:100%;
+        text-align:center;
+       
+ }
+
+        .conteudo-titulo span.titulo{
+        color:#fff;
+        background-color: #111111a0;
+        padding:18px;
+        font-size:25px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        }
+    
+      /*Para adicionar opacidade em imagens use opacity com os valores de 0 a 1, o valor 0 deixa totalmente opaco já o 1 fica original*/
+    </style>
+</head>
+<body>
+    
+<div class="imagem1">
+    <div class="conteudo-titulo">
+        <span class="titulo">Passeio de balões</span>
+    </div>
+</div>
+
+<div class="conteudo">
+   <h1>Parallax</h1>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum esse aspernatur nobis totam voluptatibus architecto dolor cum vero, sint, beatae eius est sequi placeat alias exercitationem repudiandae quibusdam! Magni, suscipit.
+   Dicta maxime ut dolorem accusantium expedita quam saepe sequi, itaque commodi, quo molestias, eum voluptatem alias? Ipsum fugit, vero, esse vitae qui molestias, consequatur saepe optio obcaecati id labore aliquid.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sunt amet modi. Voluptatibus sunt suscipit delectus provident assumenda, pariatur omnis numquam maxime harum error, quidem deserunt placeat labore debitis autem?
+Debitis repudiandae id minima est commodi optio rerum iusto unde similique asperiores, quasi ullam placeat doloribus tempore, hic laudantium tempora eligendi fuga nam cum illum quidem! Impedit eveniet magni dolorum!
+Excepturi ab reprehenderit animi officiis necessitatibus ratione asperiores, alias dolorum repellat reiciendis minima quisquam. Libero quasi eligendi maxime cum rem, animi ut? Odio fuga illo accusamus totam consectetur quas accusantium!</p>
+</div>
+
+<div class="imagem2">
+    <div class="conteudo-titulo">
+        <span class="titulo">pegando aestrada</span>
+    </div>
+</div>
+ 
+<div class="conteudo">
+    <h1>Parallax</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quos, repellat odio amet cum architecto deleniti expedita iure ipsam explicabo quod minus quo velit reprehenderit sint quaerat. Dignissimos, ipsa soluta?
+        Totam enim ea deserunt laudantium modi adipisci dolorem iusto odit nobis illum, neque eaque, laborum aut rem nam doloribus molestias, debitis numquam ducimus quos iste? Consequatur eveniet ipsum quaerat unde!
+        Possimus, vero tenetur odit voluptatem expedita voluptatibus, temporibus dolore consequatur minima officia tempora repellat exercitationem sit corporis hic itaque quisquam asperiores molestiae quam. Praesentium id repellat iste perspiciatis nesciunt voluptatum!
+        Maxime recusandae earum numquam provident, corrupti debitis officiis necessitatibus dolor sint laudantium iste, non quibusdam omnis? Delectus, reiciendis quis error, ipsum minima, ratione fugiat iusto esse illo odio mollitia obcaecati.
+        Incidunt qui architecto temporibus maxime molestiae est voluptatibus voluptate, alias minima harum dolorum? Nostrum, ex quasi ipsum fuga magni sunt ad libero nemo itaque voluptas ab nobis repellendus animi. Nisi.
+        Neque, maiores error aliquid cupiditate esse sint? Excepturi necessitatibus at aliquam mollitia repudiandae iusto hic doloremque quo consequuntur. Et nesciunt odit est vel minus dolores earum ipsa qui cupiditate aspernatur?
+    </p>
+</div>
+
+<div class="imagem3">
+    <div class="conteudo-titulo">
+        <span class="titulo">por do sol</span>
+    </div>
+</div>
+
+<div class="conteudo">
+    <h1>Parallax</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum esse aspernatur nobis totam voluptatibus architecto dolor cum vero, sint, beatae eius est sequi placeat alias exercitationem repudiandae quibusdam! Magni, suscipit.
+    Dicta maxime ut dolorem accusantium expedita quam saepe sequi, itaque commodi, quo molestias, eum voluptatem alias? Ipsum fugit, vero, esse vitae qui molestias, consequatur saepe optio obcaecati id labore aliquid.
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sunt amet modi. Voluptatibus sunt suscipit delectus provident assumenda, pariatur omnis numquam maxime harum error, quidem deserunt placeat labore debitis autem?
+ Debitis repudiandae id minima est commodi optio rerum iusto unde similique asperiores, quasi ullam placeat doloribus tempore, hic laudantium tempora eligendi fuga nam cum illum quidem! Impedit eveniet magni dolorum!
+ Excepturi ab reprehenderit animi officiis necessitatibus ratione asperiores, alias dolorum repellat reiciendis minima quisquam. Libero quasi eligendi maxime cum rem, animi ut? Odio fuga illo accusamus totam consectetur quas accusantium!</p>
+ </div>
+
+<div class="imagem4">
+    <div class="conteudo-titulo">
+        <span class="titulo">montanhas</span>
+    </div>
+</div>
+</body>
+</html>

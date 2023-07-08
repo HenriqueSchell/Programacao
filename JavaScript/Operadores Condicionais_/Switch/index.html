@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <script>
+        /*sintaxe do comando switch
+        switch(parametro){
+            case 1: 
+                 // se o parâmetro for === 1
+            break
+            case 2: 
+                // se o parâmetro for === 2
+            break
+            default:
+                // se o parâmetro não for encontrado
+        }*/
+
+        //Testes:
+          
+          var parametro = prompt('Digite um número de 1 a 2:')
+        
+          switch(parseInt(parametro)){
+            case 1:
+                document.write('Parâmetro 1')
+            break
+            case 2: 
+                document.write('Parâmetro 2')
+            break
+            default:
+            document.write('Default')
+          }
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <!--O operador switch é semelhante ao if else, mas ele só interpreta valores identicos-->
+    <!--O operador é iniciado pelo comando switch, após ele é indicado o parâmetro. Após isso abrimos chaves e iniciamos os cases que são as condições a qual serão aplicada, todo case deve terminar com o comando brake que é o aviso que aquele case terminou, e tem também o default que é a condição aplicada quando o parâmetro não se encaixa em nenhum case.-->
+</body>
+</html>

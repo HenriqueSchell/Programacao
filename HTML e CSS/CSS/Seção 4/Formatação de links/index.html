@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando Links</title>
+    <style>
+        a{
+           padding:5px;
+           text-decoration: none;
+        }
+        /*Links não visitados*/
+        a:link{
+            color:#b9c941;
+        }
+        /*Links visitados*/
+        a:visited{
+            color:#c0c0c0;
+        }
+        /*Links hover, quando passa o mouse em cima*/
+        a:hover{
+            color:red;
+            background:lightgreen;
+        }
+        /*Links ativos, quando são clicados*/
+        a:active{
+            color:#e4f371;
+        }
+        /*Muito importante seguir a seguinte ordem de formatação de links: 
+        1.Links não visitados
+        2.Links visitados
+        3.Links hover, quando passa o mouse em cima
+        4.Links ativos, quando são clicados
+         Porém não há problema se algum desses estados não for configurado, apenas sempre deve seguir esta ordem.
+        */
+    </style>
+</head>
+<body>
+   <a href="https://www.google.com.br/">Google</a> |
+   <a href="https://www.facebook.com/">Facebook</a> |
+   <a href="https://brasilescola.uol.com.br/">Brasil Escola</a>
+   <a href="https://cursoemvideo.com">Curso em video</a>
+</body>
+</html>

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/*Herança*/
+body{
+    color:red;
+    border:1px solid blue;
+}
+/*Perceba que aplicamos uma formatação no body mas os outros elementos tambem receberam ela, pois são herdeiros do body, ou seja, estão dentro do body.*/
+/*Bordas e backgrounds não são herdados*/
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Teclado</title>
+    <!--Partimos agora para os eventos que são capturados pelo teclado, são eles:
+    onkeydown - ele é acionado no momento em que uma tecla é pressionada.
+    onkeypress - ele é acionado somente quando a tecla acionada for um carácter, por exemplo teclas como shift, ctrl, fixa, não funcionam.
+    onkeyup - ele é acionado no momento em que a tecla é liberada.
+    -->
+    <script>
+        function acao1(){
+           alert('O evento onkedown foi disparado')
+        }
+
+        function acao2(){
+           alert('O evento onkeyup foi disparado')
+        }
+
+        function acao3(){
+           alert('O evento onkeypress foi disparado')
+        }
+    </script>
+</head>
+<body>
+    <label for="texto">Digite o texto: (onkeydown)</label>
+    <input onkeydown="acao1()" type="text" name="texto" id="texto">
+     <hr>
+    <label for="texto">Digite o texto: (onkeyup)</label>
+    <input onkeyup="acao2()" type="text" name="texto" id="texto">
+     <hr>
+     <label for="texto">Digite o texto: (onkeypress)</label>
+    <input onkeypress="acao3()" type="text" name="texto" id="texto">
+</body>
+</html>

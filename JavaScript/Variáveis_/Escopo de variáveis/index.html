@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo de Variáveis</title>
+    <script>
+        /*
+        O JavaScript tem 3 tipos de escopos, são eles:
+        Global - é o escopo do script como um todo.
+        Função - corresponde a todo conteúdo inserido dentro de um bloco de função.
+        Bloco - são as instruções contidas dentro de comandos como o if e switch.
+        */
+
+        var serie = 'vikings'
+        if (true){
+            var serie2 = 'drhouse'
+            document.write(serie)
+        }
+        document.write(serie2)
+        
+            document.write('<br>')
+        
+        function x(){
+            var serie3 = 'the 100'
+            document.write(serie)
+            document.write(serie2)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
