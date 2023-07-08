@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Selecionando elementos da página</title>
+    <!--Para fazer a seleção de elementos no DOM temos alguns métodos na API do DOM-->
+    <!--Os métodos são:
+     document(API)
+     getElementById() - seleciona o elemento pelo id.
+     getElementsByTagName() - seleciona os elementos pelo nome da tag, como divs, inputs e etc.
+     getElementsByClassName() - seleciona os elementos pela classe do elemento.
+     getElementsByName() - seleciona os elementos pelo atributo 'name'
+
+    -->
+    <!--Uma coisa que precisamos lembrar é que o JS é interpretado, mas esse código aqui no head é interpretado antes do nosso input então ele retorna um erro, pois os elementos do body ainda não foram processados. Para resolver usamos o script após os elementos html.-->
+    <!--
+        <script>
+         console.log(document.getElementById('nome_usuario'))
+       </script>
+-->
+</head>
+<body>
+    <input type="text" name="nome" id="nome_usuario" class="campo_texto" placeholder="Digite seu nome:">
+
+    <script>
+        //ID
+        //console.log(document.getElementById('nome_usuario'))
+     
+        //TAG
+       // console.log(document.getElementsByTagName('input'))
+
+       //CLASSE
+       //console.log(document.getElementsByClassName('campo_texto'))
+
+       //NAME
+       console.log(document.getElementsByName('nome'))
+    </script>
+</body>
+</html>
