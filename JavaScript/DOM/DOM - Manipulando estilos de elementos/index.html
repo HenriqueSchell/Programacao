@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipulando estilos de elementos</title>
+    <!--Essa aplicação tem a ideia de manipular a cor de uma div ultilizando 3 botões que quando clicados cada um fornece uma cor diferente-->
+
+    <!--Construção da aplicação:
+      A aplicação deve começar com você construindo a parte html, os 3 botões e a div. Os botões devem conter o evento onclick neste caso, dentro do onclick deve conter a função e a cor em hexadecimal que aquele botão representa. A div neste caso deverá ter uma borda sólida, com um id para identificala.
+
+      O JS deve haver a função, essa função deve resgatar a div, no caso usamos o id, após isso entramos com o valor style e seu atributo que será o backgroundColor, atribuindo a ele o parâmetro da função
+    -->
+    <script>
+       function modificarEstilo(corDeFundo){
+        document.getElementById('quadrado').style.backgroundColor = corDeFundo
+        
+        //Quando formos usar algum atributo style no JS sempre quando houver "-" o trocamos pela primeira letra da segunda palavra em maiúscula, por exemplo 'BackgroundColor'
+       }
+    </script>
+</head>
+<body>
+    <h3>Manipulando Estilo</h3>
+    <button type="button" onclick="modificarEstilo('#FF0000')">Vermelho</button>
+    <button type="button" onclick="modificarEstilo('#00FF00')">Verde</button>
+    <button type="button" onclick="modificarEstilo('#0000FF')">Azul</button>
+    <hr>
+    <div id="quadrado" style="border: solid 1px black; width:100px; height:100px;"></div>
+</body>
+</html>

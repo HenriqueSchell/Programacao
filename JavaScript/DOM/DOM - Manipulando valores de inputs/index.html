@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM - Manipulando valores de inputs</title>
+    <title>DOM - Manipulando valores de inputs de texto</title>
+    <!--Temos aqui um desafio, o desafio vai ser uma aplicação, a ideia será o seguinte:
+     vamos criar 3 campos dentro da página html, o primeiro campo servirá para a entrada de carácteres e com base no carácter digitado no campo, vamos disparar uma lógica que vai verificar se o carácter representa uma letra, se representar uma letra vamos acrecentar um input text de letras, caso contrário, o carácter digitado for um número vamos acrecentar um input text de números.
+    -->
+    <script>
+         /*Legenda de passos do script
+         1 - criar a função que fará todo o trabalho de reconhecimento e reaçocação;
+
+         2 - Receber os valores
+         O atributo value recebe o valor que é colocado dentro do input;
+
+         3 - limpar o campo de digitação
+             mesmo limpando o campo o valor já foi guardado dentro da variável
+             para isso chamamos o elemento novamente e damos o valor de de nulo ou seja '';
+
+         4 - limpar epaços em branco nas extremidades da string, isso serve para caso o usuario digite um carácter e um espaço o JS não confunda, pois o espaço o JS lê como uma string vazia;
+
+         5 - reconhecer o tipo de carácter;
+
+         6 - adicionar o carácter no campo referente a números;
+
+         7 - adicionar o carácter no campo referente a letras
+         */
+
+         
+        //1
+      function distribuirCaracter(){
+       
+       //2
+        var caracter = document.getElementById('entrada').value
+
+       //3
+        document.getElementById('entrada').value = ''
+        
+
+        //4
+        caracter.trim()
+
+        //
+        switch(caracter) {
+            case'0':
+            case'1':
+            case'2':
+            case'3':
+            case'4':
+            case'5':
+            case'6':
+            case'7':
+            case'8':
+            case'9':
+            //6
+            document.getElementById('numeros').value += caracter
+
+            break;
+            //7
+            default:
+            document.getElementById('letras').value += caracter
+            //para mantermos o histórico de carácteres digitados usamos a concatenação com atribuição "+=".
+        }    
+        
+        
+      }
+
+    </script>
 </head>
 <body>
-    
+    <input type="text" name="entrada" id="entrada" onkeyup="distribuirCaracter()" placeholder="Digite um carácter aqui!">
+    <hr>
+    <span>Letras:</span>
+    <input type="text" name="letras" id="letras" disabled="disabled">
+    <span>Números:</span>
+    <input type="text" name="numeros" id="numeros" disabled="disabled">
+    <!--O atributo desabled = "disabled" desabilita o usuário a entrar com dados nestes campos-->
 </body>
 </html>
