@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipulando classes de elementos</title>
+    <!--A ideia dessa aplicação é selecionar um elemento e atravéz do atributo className aplicar uma classe que apresenta um elemento visual-->
+
+    <!--Construção da aplicação:
+      A construção dessa aplicação é muito simples, para começar devemos começar com a página html, nesta página deve conter um div com um id e uma classe, o id serve para o JS chamar esse elemento e a classe para mudar o estilo, após isso deve ter um botão com o evento onclick e dentro dele a função que será responspavel pela mudança.
+
+      Após isso devemos ir no style e configurar dois estilos, o estilo padrão e o estilo que queremos aplicar.
+
+      Feito isso partimos pro JavaScript, no JS é muito simples, basta declarar uma função, nela devera ter a chamada da div e usaremos o atributo className e atribuluilo ao nome da classe que está declarada no style.
+    -->
+    <style>
+        .estilo1{
+          background-color:red;
+          color:white;
+        }
+
+        .estilo2{
+          width:400px;
+          height:50px;
+          background-color:blue;
+          text-align:center;
+          font-size:25px;
+          color:white;
+          padding:25px;
+        }
+    </style>
+    <script>
+    function modificarClasse() {
+        document.getElementById('mensagem').className = 'estilo2'
+    }
+    </script>
+</head>
+<body>
+    <div id="mensagem" class="estilo1">Modificando a classe do elemento</div>
+    <button type="button" onclick="modificarClasse()">Aplicar Classe</button>
+</body>
+</html>
