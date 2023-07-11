@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <!--Arrays são como listas que podemos guardar varios valores sem precisar de uma variável para cada um deles.-->
+
+    <!--Para criar uma lista Array primeiro deve se criar uma variável e atribuir a ela o objeto Array(), feito isso chamamos essa variável, abrimos o colchete e podemos dar o nome como uma string ou número e atribuimos o valor a ela, o valor também pode ser string, numero, true, false e etc
+    -->
+    <script>
+        //Formas de escrever
+
+        /*var lista_frutas = []
+        lista_frutas[1] = 'Banana'
+        lista_frutas[2] = 'Maça'
+        lista_frutas[3] = 'Morango'
+        lista_frutas[4] = 'Uva'*/
+        
+        /*var lista_frutas = Array('Banana', 'Maça', 'Morango', 'Uva')*/
+        
+         /*var lista_frutas = []('Banana', 'Maça', 'Morango', 'Uva')*/
+
+         //Quando os parâmetros forem escritos em linha, eles não tem identificação, então o JS os identifica por números que inicia no 0  e vai até o número da posição do ultimo elemento, por exemplo: banana(0), uva(3)
+
+        //a mais recomendada
+        var lista_frutas = Array()
+        lista_frutas[1] = 'Banana'
+        lista_frutas[2] = 'Maça'
+        lista_frutas[3] = 'Morango'
+        lista_frutas[4] = 'Uva'
+
+        console.log(lista_frutas[2])
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
