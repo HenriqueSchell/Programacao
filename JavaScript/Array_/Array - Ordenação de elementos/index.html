@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Ordenação de elementos</title>
+    <script>
+        var lista_frutas = Array()
+        lista_frutas [0] ='Maça'
+        lista_frutas [1] ='Uva'
+        lista_frutas [2] ='Banana'
+        lista_frutas [3] ='Morango'
+        console.log(lista_frutas.sort())
+        //O método .sort() reorganiza os itens deixando a lista em ordem alfabética e reorganiza os índices para que apanhem certo. Mas o .sort() não consegue organizar os números de forma certa então temos que arrumar.
+
+        var lista_numeros = Array()
+        lista_numeros [0] = 12
+        lista_numeros [1] = 43
+        lista_numeros [2] = 1
+        lista_numeros [3] = -5
+
+        console.log(lista_numeros.sort(ordenaNumeros))
+
+        function ordenaNumeros(a, b){
+           return a - b
+        }
+        
+        //Para arrumar então usamos a função acima, porém informamos apenas a referência da função dentro do método sort(), essa referência não pode haver parenteses.
+
+       /*A lógica da função
+        < 0 = a ordenado antes de b
+        > 0 = b ordenado antes de a 
+        == a ordem é mantida
+       */
+    </script>
+</head>
+<body>
+
+</body>
+</html>
