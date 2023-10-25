@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM - Timing</title>
+</head>
+<body>
+    <script>
+       // setTimeout(function() {document.write('teste')}, 2000)
+        //o código setTimeout funciona como um agendamento de evento, depois de tanto tempo acontece isso.
+        //a sintaxe é dada em milisegundos
+
+
+
+        // essa aplicação faz um refresh a cada 5 segundos.
+          var i = 5
+
+        setInterval( function() { document.write(i + '<br>') 
+         i = i - 1
+
+         if(i === 0){
+            window.location.reload()
+         }
+
+        }, 1000)
+        //o código setInterval realiza o evento continuamente com o intervalo de tempo definido em milisegundo.
+    </script>
+</body>
+</html>

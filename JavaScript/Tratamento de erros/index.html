@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de erros</title>
+</head>
+<body>
+    
+
+    <script>
+
+       
+
+       //Netflix
+       var video = Array()
+        video[1] = Array()
+        video[1] ['nome'] = 'Velozes e Furiosos'
+        video[1] ['categoria'] = 'Ação'
+
+        function getVideo(video){
+            //lógica
+           
+           try{
+            console.log(video[0]['nome'])
+           } 
+           
+           catch (erro) {
+             tratarErro(erro)
+             console.log('Agora sim podemos tratar esse erro')
+             throw new Error('Houve um erro, mas não se preocupe, estamos trabalhando nisso') //interrompe o script.
+           }
+
+           finally{
+            console.log('Sempre passa por aqui')
+           }
+             
+
+            console.log('A aplicação não morreu')
+        }
+        
+
+        function tratarErro(erro){
+            console.log(erro)
+        }
+          
+        getVideo(video)
+
+    </script>
+
+    <!--
+        try = é um bloco de código, toda aplicação que possa apresentar um erro deve ficar dentro do try. Após isso devemos indicar o que fazer com o erro.
+
+        catch = um bloco de código que recebe o erro e podemos explorar e tomar uma ação para que o fluxo da aplicação não quebre.
+    
+        finally = também é um bloco de código, ele é usado após o try para finalizar.
+
+        throw = serve para lançar exessões dentro da aplicação.
+    -->
+    
+</body>
+</html>

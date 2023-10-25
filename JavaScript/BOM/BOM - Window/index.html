@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM - Window</title>
+</head>
+<body>
+
+     <button onclick="abrirPopUp()">Abrir janela</button>
+     <button onclick="fecharPopUp()">Fechar janela</button>
+
+    <h1>para ver todos os objetos e atributos veja no <a href="https://www.w3schools.com/js/js_window.asp">w3schools</a></h1>
+
+    <script>
+
+       var janela
+
+        function abrirPopUp(){
+            janela = window.open('https://google.com', 'nova_janela', 'width=300, height=400')
+             }
+
+       function fecharPopUp(){
+        window.close()
+       }
+
+    </script>
+
+    <!--O BOM (Browser object model) é uma forma de se comunicar atravez do JS com recursos do browser, como acessar o histórico de navegação, forçar do redirecionamento de URL ou até mesmo salvar e recuperar cookies.-->
+</body>
+</html>

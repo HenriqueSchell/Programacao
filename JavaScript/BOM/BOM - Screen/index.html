@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM - Screen</title>
+</head>
+<body>
+    
+<script>
+
+  var altura =  window.screen.availHeight
+  var largura = window.screen.availWidth
+  
+
+  document.write('A altura do navegador é de: ' + altura + '<br/>')
+  document.write('A altura do navegador é de: ' + largura + '<br/>')
+  
+ //o código window.screen.availHeight tem a função de informar a altura da tela do dispositivo.
+
+ //o código window.screen.availWidth tem a função de informar a largura da tela do dispositivo.
+
+  if(largura < 500){
+    document.write('Lógica para versão mobile')
+  }
+
+  if(largura < 796){
+    document.write('Lógica para versão tablet')
+  }
+
+  if(largura < 1300){
+    document.write('Lógica para versão desktop')
+  }
+  
+  if(largura > 1300){
+    document.write('Lógica para versão TV')
+  }
+</script>
+
+
+</body>
+</html>
